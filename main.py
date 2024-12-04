@@ -6,7 +6,7 @@ from PIL import Image, ImageTk
 class Register(tk.Tk):
     def __init__(self):
         super().__init__()
-        image = Image.open('IMG/IMG.jpg').resize((100,100))
+        image = Image.open('IMG/lll.png').resize((200,200))
         self.tk_image = ImageTk.PhotoImage(image)
         self.title('Form Đăng Kí')
         self.geometry('700x700+100+100')
@@ -57,6 +57,12 @@ class Register(tk.Tk):
 
         en5=tk.Entry(frame1)
         en5.grid(row=4,column=3,padx=30,pady=20)
+
+        but1=tk.Button(frame1,text='Register')
+        but1.grid(row=5,column=1,columnspan=1)
+
+        but2=tk.Button(frame1,text='Quit')
+        but2.grid(row=5,column=2,columnspan=1)
 
 
 Form1=Register()
